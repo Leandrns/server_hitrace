@@ -2,8 +2,8 @@ const app = require('express')()
 const server = require('http').createServer(app)
 const io = require('socket.io')(server, {
     cors:
-        // { origin: 'https://hitrace-formula-e.vercel.app' } 
-        { origin: 'http://localhost:3000' }
+        { origin: 'https://hitrace-formula-e.vercel.app' } 
+        // { origin: 'http://localhost:3000' }
 })
 const PORT = process.env.PORT || 3001;
 
